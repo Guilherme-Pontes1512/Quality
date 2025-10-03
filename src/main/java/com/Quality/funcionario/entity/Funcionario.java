@@ -1,10 +1,11 @@
-package com.Quality.funcionario.entity;
+package com.quality.funcionario.entity;
 
-import com.Quality.funcionario.enumx.NivelMatriz;
+import com.quality.funcionario.enumx.NivelMatriz;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
@@ -15,10 +16,12 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 public class Funcionario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "FUNCIONARIO_SEQ")
+    @Column(name = "id")
     private Long id;
 
     @Column(name = "usuario")

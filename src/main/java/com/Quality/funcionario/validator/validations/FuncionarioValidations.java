@@ -1,7 +1,7 @@
-package com.Quality.funcionario.validator.validations;
+package com.quality.funcionario.validator.validations;
 
-import com.Quality.utils.exceptions.BusinessException;
-import com.Quality.utils.messages.FuncionarioMessages;
+import com.quality.utils.exceptions.BusinessException;
+import com.quality.utils.messages.FuncionarioMessages;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 

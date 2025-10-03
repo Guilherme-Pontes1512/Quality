@@ -1,6 +1,6 @@
-package com.Quality.funcionario.dto.input;
+package com.quality.funcionario.dto.input;
 
-import com.Quality.funcionario.enumx.NivelMatriz;
+import com.quality.funcionario.enumx.NivelMatriz;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

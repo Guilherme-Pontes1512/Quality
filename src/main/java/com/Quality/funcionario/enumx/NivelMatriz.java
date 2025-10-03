@@ -1,4 +1,4 @@
-package com.Quality.funcionario.enumx;
+package com.quality.funcionario.enumx;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

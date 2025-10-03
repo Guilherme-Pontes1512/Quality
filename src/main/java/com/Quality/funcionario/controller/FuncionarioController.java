@@ -1,8 +1,9 @@
-package com.Quality.funcionario.controller;
+package com.quality.funcionario.controller;
 
-import com.Quality.funcionario.dto.input.FuncionarioInput;
-import com.Quality.funcionario.dto.output.FuncionarioOutput;
-import com.Quality.funcionario.service.FuncionarioService;
+
+import com.quality.funcionario.dto.input.FuncionarioInput;
+import com.quality.funcionario.dto.output.FuncionarioOutput;
+import com.quality.funcionario.service.FuncionarioService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.core.io.Resource;
 import org.springframework.http.ResponseEntity;

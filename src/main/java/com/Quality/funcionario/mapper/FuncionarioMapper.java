@@ -1,8 +1,8 @@
-package com.Quality.funcionario.mapper;
+package com.quality.funcionario.mapper;
 
-import com.Quality.funcionario.dto.input.FuncionarioInput;
-import com.Quality.funcionario.dto.output.FuncionarioOutput;
-import com.Quality.funcionario.entity.Funcionario;
+import com.quality.funcionario.dto.input.FuncionarioInput;
+import com.quality.funcionario.dto.output.FuncionarioOutput;
+import com.quality.funcionario.entity.Funcionario;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;

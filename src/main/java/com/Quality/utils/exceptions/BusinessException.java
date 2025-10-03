@@ -1,4 +1,4 @@
-package com.Quality.utils.exceptions;
+package com.quality.utils.exceptions;
 
 public class BusinessException extends RuntimeException {
 
