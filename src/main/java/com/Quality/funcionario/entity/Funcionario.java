@@ -1,5 +1,6 @@
 package com.quality.funcionario.entity;
 
+
 import com.quality.funcionario.enumx.NivelMatriz;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
