@@ -1,4 +1,4 @@
-package com.Quality;
+package com.quality;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

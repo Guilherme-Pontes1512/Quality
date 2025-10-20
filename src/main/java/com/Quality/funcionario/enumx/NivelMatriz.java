@@ -1,10 +1,11 @@
 package com.quality.funcionario.enumx;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
 @Getter
-@RequiredArgsConstructor
+@AllArgsConstructor
 public enum NivelMatriz {
 
     A("A"),

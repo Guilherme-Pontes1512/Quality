@@ -17,7 +17,7 @@ public class FuncionarioController {
     public final FuncionarioService service;
 
     @PostMapping
-    public ResponseEntity<Resource> inserir(FuncionarioInput input) {
+    public ResponseEntity<Resource> inserir(@RequestBody FuncionarioInput input) {
         service.inserir(input);
         return ResponseEntity.ok().build();
     }
