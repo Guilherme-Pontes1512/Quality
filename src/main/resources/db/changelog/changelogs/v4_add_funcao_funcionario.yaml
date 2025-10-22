@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: 004-add-funcao-fk-funcionario
+      author: guilherme.pontes
+      changes:
+        - addColumn:
+            tableName: funcionario
+            columns:
+              - column:
+                  name: id_funcao
+                  type: BIGINT
+                  constraints:
+                    nullable: true
+
+        - addForeignKeyConstraint:
+            baseTableName: funcionario
+            baseColumnNames: id_funcao
+            referencedTableName: funcao
+            referencedColumnNames: id
+            constraintName: fk_funcionario_funcao
+            onDelete: SET NULL

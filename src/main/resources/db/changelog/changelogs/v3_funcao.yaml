@@ -1,0 +1,44 @@
+databaseChangeLog:
+  - changeSet:
+      id: 003-create-funcao-table
+      author: guilherme.pontes
+      changes:
+        - createSequence:
+            sequenceName: FUNCAO_SEQ
+            startValue: 1
+            incrementBy: 1
+
+        - createTable:
+            tableName: funcao
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: false
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: funcao
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: true
+
+              - column:
+                  name: departamento
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: true
+
+              - column:
+                  name: processo
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: true
+
+              - column:
+                  name: gestor
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: true

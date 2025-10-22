@@ -1,0 +1,67 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001-create-funcionario-table
+      author: guilherme.pontes
+      changes:
+        - createSequence:
+            sequenceName: FUNCIONARIO_SEQ
+            startValue: 1
+            incrementBy: 1
+
+        - createTable:
+            tableName: funcionario
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: false
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: usuario
+                  type: VARCHAR(255)
+
+              - column:
+                  name: nome
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: data_admissao
+                  type: DATE
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: data_saida
+                  type: DATE
+
+              - column:
+                  name: pc_quality_user
+                  type: BOOLEAN
+                  defaultValueBoolean: true
+
+              - column:
+                  name: matriz_competencia
+                  type: BOOLEAN
+                  defaultValueBoolean: true
+
+              - column:
+                  name: nivel_matriz
+                  type: VARCHAR(10)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: nivel_atividade
+                  type: INTEGER
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: ativo
+                  type: BOOLEAN
+                  defaultValueBoolean: true
