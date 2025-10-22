@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: changelogs/v1_funcionario.yaml
+      relativeToChangelogFile: true
+  - include:
+      file: changelogs/v3_funcao.yaml
+      relativeToChangelogFile: true

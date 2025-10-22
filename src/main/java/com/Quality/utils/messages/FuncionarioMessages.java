@@ -1,4 +1,4 @@
-package com.Quality.utils.messages;
+package com.quality.utils.messages;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

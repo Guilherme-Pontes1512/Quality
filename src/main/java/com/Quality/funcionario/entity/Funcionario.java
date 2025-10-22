@@ -1,24 +1,29 @@
-package com.Quality.funcionario.entity;
+package com.quality.funcionario.entity;
 
-import com.Quality.funcionario.enumx.NivelMatriz;
+
+import com.quality.funcao.entity.Funcao;
+import com.quality.funcionario.enumx.NivelMatriz;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
 
 @Table(name = "funcionario")
-@SequenceGenerator(name = "FUNCIONARIO_SEQ", sequenceName = "FUNCIONARIO_SEQ")
+@SequenceGenerator(name = "FUNCIONARIO_SEQ", sequenceName = "FUNCIONARIO_SEQ", allocationSize = 1)
 @Entity
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 public class Funcionario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "FUNCIONARIO_SEQ")
+    @Column(name = "id")
     private Long id;
 
     @Column(name = "usuario")
@@ -51,4 +56,9 @@ public class Funcionario {
 
     @Column(name = "ativo")
     private boolean ativo = true;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "funcao_id", referencedColumnName = "id")
+    @NotNull(message = "O campo \"Função\" é obrigatório.")
+    private Funcao funcao;
 }

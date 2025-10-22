@@ -1,13 +1,15 @@
-package com.Quality.funcionario.dto.output;
+package com.quality.funcionario.dto.output;
 
-import com.Quality.funcionario.enumx.NivelMatriz;
+import com.quality.funcionario.enumx.NivelMatriz;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
-@AllArgsConstructor
-@NoArgsConstructor
+@Builder
+@Getter
 public class FuncionarioOutput {
 
     private String usuario;
